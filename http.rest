@@ -1,0 +1,19 @@
+### get movie lists
+get http://localhost:8080/
+
+### add a movie
+
+post http://localhost:8080/add
+content-type: application/json
+
+{
+    "username": "admin",
+    "password": "12345678"
+}
+
+### update a movie
+put http://localhost:8080/update/admin
+
+### delete a movie
+
+delete http://localhost:8080/delete?user=admin
